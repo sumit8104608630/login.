@@ -9,13 +9,13 @@
 <body>
     <div class="sign">
       <h1 class="tag">SIGN IN</h1>
-      <input type="email" class="email" placeholder="Email">
+      <input type="email" class="email" placeholder="Email" id="email" >
       <br>
-      <input type="password" class="pass" placeholder="Password">
+      <input type="password" class="pass" placeholder="Password" id="pass">
       <br>
       <a href="" class="fg">Forgot Password</a>
       <a href="" class="sp">Sign-Up</a>
-      <br><button class="btn">SIGN IN</button>
+      <br><button class="btn" type="button" onclick="ss()">SIGN IN</button>
     </div>
     <div class="design">
     <div class="subbox">
@@ -154,7 +154,7 @@
         <div class="box"></div>
     </div>
     </div>
-     <script>
+    <script>
 
         function ss(){
         let a=document.getElementById("email");
