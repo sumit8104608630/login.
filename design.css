@@ -218,6 +218,11 @@ body {
         bottom: -151%;
         left: 135%;
     }
+    @media (max-width:280) {
+    .design{
+        bottom: -151%;
+        left: 65%;
+    }
     
 }
 
