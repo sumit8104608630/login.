@@ -13,11 +13,13 @@
     
 }
 body{
-    overflow: hidden;
+   
     height: 100vh;
     background-size: 400% 400%;
     background-image: linear-gradient(180deg,rgb(0, 255, 0),rgb(0, 0, 0),rgb(0, 255, 0));
     animation: bg 5s ease infinite;
+    justify-content: center;
+    overflow: hidden;
 }
 @keyframes bg {
     0%{
@@ -47,11 +49,13 @@ body{
     background-color: rgb(58, 58, 58);
     outline: none;
 }
-
+.email,.pass:focus{
+    
+}
 .box{
     margin: 1px;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
    background-color: rgb(43, 42, 42);
    transition:background-color 2s ease;
 }
@@ -110,51 +114,41 @@ a{
     margin: 20px 70px;
     color: rgb(0, 255, 0);
 }
-
-html {
-    touch-action: manipulation;
+@media  (max-width: 640px){
+   .box{
+    width: 100px;
+    height: 100px;
+   }
+   .sign{
+    bottom: 20%;
+    left: 30%;
+   }
 }
-
-body {
-    touch-action: manipulation;
-}
-@media  (max-width: 1405px){
-    body{
-        overflow: hidden;
-    }
-    .box{
-        height: 300px;
-        width: 300px;
-    }
-    
-.sign{
-    width: fit-content;
-    height: fit-content;
-    border-radius: 5px;
-    background-color: rgb(33, 33, 33);
-    color: white;
-    z-index: 2;
-    position: absolute;
-    bottom: -107%;
-    left: 181%;
-    box-shadow: 0 0 30px 0 rgb(0, 0, 0)
-    
-}
-       
+@media  (max-width: 280px){
+    .sign{
+        width: fit-content;
+        height: fit-content;
+        border-radius: 5px;
+        background-color: rgb(33, 33, 33);
+        color: white;
+        z-index: 2;
+        position: absolute;
+        bottom: -101%;
+        left: 168%;
+        box-shadow: 0 0 30px 0 rgb(0, 0, 0)
         
-    
+    }
     .sp{
-        font-size: 3rem;
+        font-size: 1rem;
         color: rgb(0, 255, 0);
         margin: 2px 15px;
         }
         .fg{
-            font-size: 3rem;
-            margin: 2px 196px 49px 50px;
+            font-size: 1rem;
+            margin: 2px 21px;
         }
         .ss{
             display: flex;
-            
             flex-direction: column;
             
         }
@@ -164,12 +158,11 @@ body {
            
         }
         .btn{
-            border-radius: 20px;
-            padding: 5px 20px;
-            margin: 86px 238px;
-
+            border-radius: 5px;
+            padding: 5px 16px;
+            margin: 20px 80px;
             border: none;
-            font-size: 5rem;
+            font-size: 1rem;
             background-color: rgb(0, 255, 0);
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
@@ -177,52 +170,24 @@ body {
             background-color: rgba(7, 251, 7, 0.7);
         }
         .tag{
-            font-size: 10rem;
+            font-size: 5rem;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 60px 80px;
-            padding: 10px;
+            margin: 30px 61px;
             color: rgb(0, 255, 0);
+        }
+        .box{
+            width: 200px;
+            height: 200px;
         }
         .email,.pass{
             border: none;
             color: white;
             padding: 5px;
             border-radius: 5px;
-            margin: 40px 20px;
-            width: 750px;
-            height: 100px;
-            font-size: 5rem;        
+            margin: 10px 20px;
+            width: 373px;
+            height: 25px;
             background-color: rgb(58, 58, 58);
             outline: none;
         }
-   
 }
-@media(max-width: 580px) {
-    .sign{
-        width: fit-content;
-        height: fit-content;
-        border-radius: 5px;
-        background-color: rgb(33, 33, 33);
-        color: white;
-        z-index: 2;
-        position: absolute;
-        bottom: -195%;
-        left: 105%;
-        box-shadow: 0 0 30px 0 rgb(0, 0, 0)
-        
-    }
-
-}
-@media (max-width:600) {
-    .design{
-        bottom: -151%;
-        left: 135%;
-    }
-    @media (max-width:280) {
-    .design{
-        bottom: -151%;
-        left: 65%;
-    }
-    
-}
-
